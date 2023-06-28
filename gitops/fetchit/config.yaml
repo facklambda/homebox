@@ -1,0 +1,13 @@
+configReload:
+  schedule: "*/5 * * * *"
+  configUrl: https://raw.githubusercontent.com/facklambda/homebox/main/gitops/config.yaml
+    
+targetConfigs:
+- url: https://github.com/facklambda/homebox
+  raw:
+  - name: welcome-to-fetchit
+    targetPath: examples/single-raw
+    schedule: "*/1 * * * *"
+    pullImage: true
+  branch: main
+
