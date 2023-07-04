@@ -1,0 +1,13 @@
+configReload:
+  schedule: "*/15 * * * *"
+  configUrl: https://raw.githubusercontent.com/facklambda/homebox/main/gitops/fetchit/config.yaml
+    
+targetConfigs:
+- url: https://github.com/facklambda/homebox
+  kube:
+  - name: caddy
+    targetPath: gitops/caddy
+    schedule: "*/15 * * * *"
+    pullImage: true
+  branch: main
+
