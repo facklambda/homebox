@@ -1,22 +1,22 @@
+# # apiVersion: v1
+# # kind: ConfigMap
+# # metadata:
+# #   name: env
+# # data:
+# #   APP_COLOR: blue
+# #   tree: trunk
+# # ---
 # apiVersion: v1
-# kind: ConfigMap
+# kind: Pod
 # metadata:
-#   name: env
-# data:
-#   APP_COLOR: blue
-#   tree: trunk
-# ---
-apiVersion: v1
-kind: Pod
-metadata:
-  name: caddy_pod
-spec:
-  containers:
-  - name: caddy
-    image: docker.io/caddy:latest
-    ports:
-    - containerPort: 80
-    # envFrom:
-    # - configMapRef:
-    #     name: env
-    #     optional: false
+#   name: caddy_pod
+# spec:
+#   containers:
+#   - name: caddy
+#     image: docker.io/caddy:latest
+#     ports:
+#     - containerPort: 80
+#     # envFrom:
+#     # - configMapRef:
+#     #     name: env
+#     #     optional: false
