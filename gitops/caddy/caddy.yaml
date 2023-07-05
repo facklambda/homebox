@@ -9,11 +9,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: colors_pod
+  name: caddy_pod
 spec:
   containers:
   - name: caddy
-    image: docker.io/_/caddy:latest
+    image: docker.io/caddy:latest
     ports:
     - containerPort: 443
       hostPort: 443
