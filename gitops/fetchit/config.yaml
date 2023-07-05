@@ -10,9 +10,9 @@ targetConfigs:
     schedule: "*/5 * * * *"
   branch: main
 
-- url: https://github.com/facklambda/homebox
-  kube:
-  - name: nginx
-    targetPath: gitops/nginx
-    schedule: "*/5 * * * *"
-  branch: main
+# - url: https://github.com/facklambda/homebox
+#   kube:
+#   - name: nginx
+#     targetPath: gitops/nginx
+#     schedule: "*/5 * * * *"
+#   branch: main
