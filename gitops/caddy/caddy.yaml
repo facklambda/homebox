@@ -15,8 +15,7 @@ spec:
   - name: caddy
     image: docker.io/caddy:latest
     ports:
-    - containerPort: 443
-      hostPort: 443
+    - containerPort: 80
     # envFrom:
     # - configMapRef:
     #     name: env
