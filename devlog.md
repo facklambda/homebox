@@ -21,3 +21,7 @@ resources i've referenced so far:
 * [podman-kube - Play containers, pods or volumes based on a structured input file](https://docs.podman.io/en/latest/markdown/podman-kube.1.html)
 * [systemd.unit — Unit configuration](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)
 * [make a readme.com](https://www.makeareadme.com/)
+
+firewall issues, had to fix w/ 
+$ sudo firewall-cmd --add-service=http --add-service=https --permanent
+$ sudo firewall-cmd --reload
